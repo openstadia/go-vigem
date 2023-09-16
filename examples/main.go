@@ -32,7 +32,7 @@ func main() {
 		time.Sleep(5 * time.Second)
 
 		fmt.Println("Release")
-		x360.ReleaseButton(0x1000)
+		x360.ReleaseButton(X360.XUSB_GAMEPAD_A)
 		x360.Update()
 		time.Sleep(5 * time.Second)
 	}
